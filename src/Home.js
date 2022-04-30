@@ -12,7 +12,7 @@ import {
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getPosts } from "../src/Reducers/Post";
-import { getCountries } from "../src/Reducers/CountriesReducers";
+
 
 import Tablecelling from "./Tablecelling";
 

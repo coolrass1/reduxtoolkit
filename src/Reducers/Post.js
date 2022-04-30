@@ -12,13 +12,13 @@ export const getPosts = createAsyncThunk(
   //action type string
   'posts/getPosts',
   // callback function
-  async (name, thunkAPI) => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/posts').then(
-    (data) => data.json()
-  )
+  async () => {
+  //   const res = await fetch('https://jsonplaceholder.typicode.com/posts').then(
+  //   (data) => data.json()
+  // )
   const {data}= await axios.get(url)
  
-  console.log(thunkAPI.getState())
+ // console.log(thunkAPI.getState())
   return data
 })
 

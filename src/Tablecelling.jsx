@@ -1,10 +1,10 @@
-import { Button, FormGroup, IconButton, Stack, TableCell, TableRow, TextField } from '@mui/material'
+import { IconButton, TableCell, TableRow, TextField } from '@mui/material'
 import DeleteIcon from "@mui/icons-material/Delete";
 import EditIcon from "@mui/icons-material/Edit";
 import SaveIcon from '@mui/icons-material/Save';
 import { useDispatch } from 'react-redux';
 import React from 'react'
-import { useEffect,useState } from "react";
+import { useState } from "react";
 import {updatePost,deletePost } from "./Reducers/Post"
 
 const Tablecelling = ({row}) => {
