@@ -110,7 +110,7 @@ console.log(action.payload.message[0])
     },
     [updatePost.fulfilled]: (state, action) => {
       
-      state.entities=state.entities.map(tt=>tt.id===action.payload.id?action.payload:tt)
+      state.entities=state.entities.map(tt=>tt._id===action.payload._id?action.payload:tt)
     },
     [deletePost.fulfilled]: (state, action) => {
       console.log('del')
