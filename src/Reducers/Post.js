@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import axios from "axios"
 
-const url="http://mail.librahouse.co.uk:5000/posts"
+const url="https://mail.librahouse.co.uk/api/posts"
 const initialState = {
   entities: [],
   loading: false,
